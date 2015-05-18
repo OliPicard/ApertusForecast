@@ -1,0 +1,14 @@
+﻿<Window x:Class="Weather.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <Grid>
+        <Label x:Name="texty" Content="Label" HorizontalAlignment="Left" Margin="242,98,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="textyfresh" Content="Label" HorizontalAlignment="Left" Margin="242,202,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="tempy" Content="Label" HorizontalAlignment="Left" Margin="242,148,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="sun" Content="Label" HorizontalAlignment="Left" Margin="242,265,0,0" VerticalAlignment="Top"/>
+        <WebBrowser x:Name="webby" HorizontalAlignment="Left" Height="232" Margin="297,0,0,0" VerticalAlignment="Top" Width="220"/>
+        <Label x:Name="forecast" Content="Label" HorizontalAlignment="Left" Margin="65,98,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
