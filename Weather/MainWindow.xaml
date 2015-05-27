@@ -1,14 +1,40 @@
 ﻿<Window x:Class="Weather.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
+        xmlns:converters="clr-namespace:Weather.Converters"
+        Title="Weather" Height="350" Width="525" ResizeMode="NoResize">
+    <Window.Resources>
+        <converters:ConvertModels x:Key="ConvertModels" />
+        <converters:WindConverter x:Key="WindConverter" />
+        <converters:Beaufort x:Key="Beaufort"/>
+        <converters:SpeedCheck x:Key="SpeedyCheck"/>
+    </Window.Resources>
     <Grid>
-        <Label x:Name="texty" Content="Label" HorizontalAlignment="Left" Margin="242,98,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="textyfresh" Content="Label" HorizontalAlignment="Left" Margin="242,202,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="tempy" Content="Label" HorizontalAlignment="Left" Margin="242,148,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="sun" Content="Label" HorizontalAlignment="Left" Margin="242,265,0,0" VerticalAlignment="Top"/>
-        <WebBrowser x:Name="webby" HorizontalAlignment="Left" Height="232" Margin="297,0,0,0" VerticalAlignment="Top" Width="220"/>
-        <Label x:Name="forecast" Content="Label" HorizontalAlignment="Left" Margin="65,98,0,0" VerticalAlignment="Top"/>
-
+        <Label x:Name="texty" Content="" HorizontalAlignment="Left" Margin="9,235,0,0" VerticalAlignment="Top" FontSize="48"/>
+        <Label x:Name="textyfresh" Content="" HorizontalAlignment="Left" Margin="69,84,0,0" VerticalAlignment="Top" FontSize="15"/>
+        <Label x:Name="Sun" Content="" HorizontalAlignment="Left" Margin="62,119,0,0" VerticalAlignment="Top" FontSize="24"/>
+        <TextBox x:Name="textbox1" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="London" VerticalAlignment="Top" Width="120" KeyDown="EnterKey"/>
+        <Button x:Name="go" Content="Go" HorizontalAlignment="Left" Margin="121,1,0,0" VerticalAlignment="Top" Width="75" Click="go_Click"/>
+        <DataGrid x:Name="Grid1"  IsReadOnly="True" HorizontalAlignment="Left" Margin="289,169,0,0" VerticalAlignment="Top" AutoGenerateColumns="False" Width="218" Height="128" ClipToBounds="True" Background="White">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="day" Binding="{Binding day}"/>
+                <DataGridTextColumn Header="high" Binding="{Binding high}" />
+                <DataGridTextColumn Header="low" Binding="{Binding low}" />
+                <DataGridTextColumn Header="condtion" Binding="{Binding text}" Width="*" />
+            </DataGrid.Columns>
+        </DataGrid>
+        <Label Content="Today's Weather" HorizontalAlignment="Left" Margin="52,53,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label Content="This week's weather" HorizontalAlignment="Left" Margin="342,136,0,0" VerticalAlignment="Top" FontWeight="Bold"/>
+        <Label x:Name="SRise" Content="" HorizontalAlignment="Left" Margin="385,65,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="SSet" Content="" HorizontalAlignment="Left" Margin="385,87,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sun Rise" HorizontalAlignment="Left" Margin="317,65,0,0" VerticalAlignment="Top"/>
+        <Label Content="Sun Set" HorizontalAlignment="Left" Margin="322,87,0,0" VerticalAlignment="Top"/>
+        <Image x:Name="img" Source="{Binding Path=Condition, Converter={StaticResource ConvertModels}}" HorizontalAlignment="Left" Height="107" Margin="186,21,0,0" VerticalAlignment="Top" Width="136"></Image>
+        <Image x:Name="wind" Source="{Binding Path=Direction, Converter={StaticResource WindConverter}}" HorizontalAlignment="Left" Height="100" VerticalAlignment="Top" Width="100" Margin="175,131,0,0"/>
+        <Label x:Name="speed" Content="{Binding Speed, Converter={StaticResource Beaufort}}" HorizontalAlignment="Left" Margin="173,244,0,0" VerticalAlignment="Top" Height="39" Width="102"/>
+        <Label x:Name="windspeed" Content="{Binding Speed, Converter={StaticResource SpeedyCheck}}" HorizontalAlignment="Left" Margin="190,232,0,0" VerticalAlignment="Top"/>
+        <Image HorizontalAlignment="Left" Source="pack://application:,,,/Images/purple.png" Height="24" Margin="373,296,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="373,297,0,0" Opacity="0" Click="Button_Click"/>
+        <Button x:Name="url" Content="" HorizontalAlignment="Left" VerticalAlignment="Top" Width="76" Margin="68,79,0,0" Height="31" Click="url_Click" Opacity="0"/>
     </Grid>
 </Window>
