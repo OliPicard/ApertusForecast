@@ -40,7 +40,7 @@ namespace Weather.Converters
                 }
                 else if (windstring > 247.5 && windstring <= 292.5)
                 {
-                    return "pack://application:,,,/Images/compuswest";
+                    return "pack://application:,,,/Images/compuswest.png";
                 }
                 else if (windstring > 292.5 && windstring <= 337.5)
                 {

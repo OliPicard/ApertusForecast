@@ -17,7 +17,10 @@ namespace Weather
         public string SunRise { get; set; }
         public string SunSet { get; set; }
         public string Direction { get; set; }
+        public string title { get; set; }
+        public string Humidity { get; set; }
         public string Speed { get; set; }
+        public string Code { get; set; }
         public string link { get; set; }
         public string Condition { get; set; }
         public int Temperature { get; set; }
@@ -34,7 +37,7 @@ namespace Weather
     {
         public override bool CanConvert(Type objectType)
         {
-            return (objectType == typeof(QueryResult)); //new boolean overriding objectType with LineDiplay
+            return (objectType == typeof(QueryResult)); //new boolean overriding objectType with QueryResult
         }
         public override bool CanWrite { get { return false; } }
 
@@ -42,7 +45,7 @@ namespace Weather
         {
 
             JObject jo = JObject.Load(reader); //new JObject reader (custom ReadJson Deseralizser)
-
+            
             var result = new QueryResult
             {
                 City = (string)jo.SelectToken("query.results.channel.location.city"),
@@ -50,6 +53,8 @@ namespace Weather
                 Speed = (string)jo.SelectToken("query.results.channel.wind.speed"),
                 link = (string)jo.SelectToken("query.results.channel.link"),
                 Direction = (string)jo.SelectToken("query.results.channel.wind.direction"),
+                Humidity = (string)jo.SelectToken("query.results.channel.atmosphere.humidity"),
+                Code = (string)jo.SelectToken("query.results.channel.item.condition.code"),
                 SunSet = (string)jo.SelectToken("query.results.channel.astronomy.sunset"),
                 Condition = (string)jo.SelectToken("query.results.channel.item.condition.text"),
                 Temperature = (int)jo.SelectToken("query.results.channel.item.condition.temp"),

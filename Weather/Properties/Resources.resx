@@ -118,8 +118,56 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="amcloudraindrop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\amcloudraindrop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="amcloudyrain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\amcloudyrain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="amfogcloudysunshine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\amfogcloudysunshine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="amfogsunshine" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\amfogsunshine.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="amhail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\amhail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="amhailtwo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\amhailtwo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="amheavyshowers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\amheavyshowers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="amsnowshowers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\amsnowshowers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="amsunnythunder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\amsunnythunder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="amsunnywithwind" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\amsunnywithwind.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="cloud" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\cloud.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cloud1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\cloud.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cloudnight" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\cloudnight.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cloudywithsun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\cloudywithsun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cloudywithsunshineandrain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\cloudywithsunshineandrain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cloudywithsunshineandsnow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\cloudywithsunshineandsnow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="cold" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\cold.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="compuseast" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\compuseast.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -148,13 +196,133 @@
   <data name="compuswest" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\compuswest.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="fog" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\fog.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="foggy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\foggy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\hail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="hailtwo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\hailtwo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heavypmshowers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\heavypmshowers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heavyrain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\heavyrain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="heavyraintwo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\heavyraintwo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="hurricane" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\hurricane.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="lightningstorm" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\lightningstorm.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mild" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\mild.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="moon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\moon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pmcloudwindy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\pmcloudwindy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pmfogcloud" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\pmfogcloud.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pmfogcloudtwo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\pmfogcloudtwo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pmhail" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\pmhail.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pmhailtwo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\pmhailtwo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pmheavyrain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\pmheavyrain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pmrain" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\pmrain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pmshowers" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\pmshowers.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pmshowerstwo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\pmshowerstwo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pmsnow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\pmsnow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pmsnowshower" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\pmsnowshower.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="pmsunnythunder" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\pmsunnythunder.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="purple" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\purple.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="rain" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Images\rain.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="raincloud" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\raincloud.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rainwithwindandsun" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\rainwithwindandsun.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rainy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\rainy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="rainywithwind" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\rainywithwind.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="snow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\snow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="snowcloud" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\snowcloud.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sunglasses" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\sunglasses.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sunny" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\sunny.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sunrise" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\sunrise.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sunrisetwo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\sunrisetwo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sunset" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\sunset.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="sunsettwo" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\sunsettwo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="tempfull" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\tempfull.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="templow" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\templow.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Tornado" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\Tornado.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Umbrella" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\Umbrella.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="verywindy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\verywindy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="windy" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Images\Icons\windy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -29,7 +29,7 @@ namespace Weather
         {
             InitializeComponent();
             Get();
-            DataContext = this;
+            DataContext = this; //logic 
             
         }
         string _direction { get; set; }
@@ -45,17 +45,17 @@ namespace Weather
                 OnPropertyChanged("Direction"); //condition changed.
             }
         }
-        string _condition { get; set; }
-        public string Condition //this model is being bound at xaml level.
+        string _code { get; set; }
+        public string Code //this model is being bound at xaml level.
         {
             get
             {
-                return _condition;
+                return _code;
             }
             set
             {
-                _condition = value; //sets condition for value convertmodels
-                OnPropertyChanged("Condition"); //condition changed.
+                _code = value; //sets condition for value convertmodels
+                OnPropertyChanged("Code"); //condition changed.
             }
         }
         string _speed { get; set;}
@@ -87,7 +87,7 @@ namespace Weather
         }
         async private void Get()
         {
-            
+
             using (HttpClient client = new HttpClient())
             {
 
@@ -99,60 +99,82 @@ namespace Weather
                 if (response.IsSuccessStatusCode)
                 {
                     var content = await response.Content.ReadAsStringAsync();
-                    QueryResult Result = JsonConvert.DeserializeObject<QueryResult>(content);
-                    string Name = Result.City;
-                    string Forty = Result.Condition;
-                    string Windy = Result.Direction;
-                    link = Result.link;
-                    string Speedy = Result.Speed;
-                    string Temp = Result.Temperature.ToString(); //force that temp to string.
-                    //List<Weather.Forecast> example = result.Forecasts;
-                    string SunRising = Result.SunRise;
-                    Condition = Result.Condition; //sets up the condition for convertmodels to use
-                    Direction = Result.Direction;
-                    Speed = Result.Speed;
-                    SpeedCheck = Result.Speed;
-                    string SunSetting = Result.SunSet;
-                    var Example = Result.Forecasts; //populating forecast grid.
-                    Grid1.ItemsSource = Example; //binding dat data
-                    textyfresh.Content = Forty; 
-                    texty.Content = Name;
-                    SRise.Content = SunRising;
-                    SSet.Content = SunSetting;
-                    int Jack = Convert.ToInt32(Temp); //converting the temp with meaning.
-                    if (Jack > 30)
+                    ErrorResult checker = JsonConvert.DeserializeObject<ErrorResult>(content);
+                    string title = checker.title;
+                    int code = checker.count;
+                    if (code == 0)
                     {
-                        Sun.Content = "Very Hot" + Jack + "c";
-                        Sun.Foreground = new System.Windows.Media.SolidColorBrush(Colors.OrangeRed);
+                        textbox1.Text = "London";
+                        MessageBox.Show("This isn't a vaild location.");
+                        Get();
                     }
-                    else if (Jack > 23)
+                    else if (title == "Yahoo! Weather - Error") //error checking.
                     {
-                        Sun.Content = "Warm! " + Jack + "c";
-                    }
-
-                    else if (Jack > 10)
-                    {
-                        Sun.Content = "Cool " + Jack + "c";
-                        Sun.Foreground = new System.Windows.Media.SolidColorBrush(Colors.Navy); 
-                    }
-                    else if (Jack > 6)
-                    {
-                        Sun.Content = "Cold" + Jack + "c";
-                        Sun.Foreground = new System.Windows.Media.SolidColorBrush(Colors.Azure);
-                    }
-                    else if (Jack > 1)
-                    {
-                        Sun.Content = "Ice Cold" + Jack + "c";
-                        Sun.Foreground = new System.Windows.Media.SolidColorBrush(Colors.Gray);
+                        textbox1.Text = "London"; //failback to london.
+                        MessageBox.Show("This isn't a vaild location."); //tell the user the location is invaild.
+                        Get(); //get request.
                     }
                     else
                     {
-                        Sun.Content = Jack + "c";
-                    }
-                }
-                else
-                {
-                    texty.Content = "Error";
+                        QueryResult Result = JsonConvert.DeserializeObject<QueryResult>(content);
+                        string Name = Result.City;
+                        string Forty = Result.Condition;
+                        string Windy = Result.Direction;
+                        link = Result.link;
+                        string Speedy = Result.Speed;
+                        string Temp = Result.Temperature.ToString(); //force that temp to string.
+                        //List<Weather.Forecast> example = result.Forecasts;
+                        string SunRising = Result.SunRise;
+                        Code = Result.Code; //sets up the condition for convertmodels to use
+                        Direction = Result.Direction;
+                        Speed = Result.Speed;
+                        HumDisplay.Content = Result.Humidity + "%";
+                        SpeedCheck = Result.Speed;
+                        string SunSetting = Result.SunSet;
+                        var Example = Result.Forecasts; //populating forecast grid.
+                        Grid1.ItemsSource = Example; //binding dat data
+                        textyfresh.Content = Forty;
+                        texty.Content = Name;
+                        SRise.Content = SunRising;
+                        SSet.Content = SunSetting;
+                        int Jack = Convert.ToInt32(Temp); //converting the temp with meaning.
+                        if (Jack > 30)
+                        {
+                            Sun.Content = "Very Hot\n" + Jack + "c";
+                            Sun.Foreground = new System.Windows.Media.SolidColorBrush(Colors.OrangeRed);
+                        }
+                        else if (Jack > 21)
+                        {
+                            Sun.Content = "Warm! " + Jack + "c";
+                            Sun.Foreground = new System.Windows.Media.SolidColorBrush(Colors.Crimson);
+                        }
+                        else if (Jack > 16)
+                        {
+                            Sun.Content = "Mild " + Jack + "c";
+                            Sun.Foreground = new System.Windows.Media.SolidColorBrush(Colors.Gold);
+                        }
+                        else if (Jack > 9)
+                        {
+                            Sun.Content = "Cool " + Jack + "c";
+                            Sun.Foreground = new System.Windows.Media.SolidColorBrush(Colors.Navy);
+                        }
+                        else if (Jack < 6)
+                        {
+                            Sun.Content = "Cold" + Jack + "c";
+                            Sun.Foreground = new System.Windows.Media.SolidColorBrush(Colors.Azure);
+                        }
+                        else if (Jack < 1)
+                        {
+                            Sun.Content = "Ice Cold" + Jack + "c";
+                            Sun.Foreground = new System.Windows.Media.SolidColorBrush(Colors.Gray);
+                        }
+                        else
+                        {
+                            Sun.Content = Jack + "c";
+                        }
+
+                     }
+                    
                 }
             }
         }
