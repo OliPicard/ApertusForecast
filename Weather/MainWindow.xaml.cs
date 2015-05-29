@@ -145,7 +145,7 @@ namespace Weather
                         }
                         else if (Jack > 21)
                         {
-                            Sun.Content = "Warm! " + Jack + "c";
+                            Sun.Content = "Warm!\n" + Jack + "c";
                             Sun.Foreground = new System.Windows.Media.SolidColorBrush(Colors.Crimson);
                         }
                         else if (Jack > 16)
