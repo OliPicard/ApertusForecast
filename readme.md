@@ -3,7 +3,9 @@
 
 ![ApertusForecast](https://s3-eu-west-1.amazonaws.com/apertus/screenshot.png)
 
-+ Always Updated with real-time data. (Powered by ![Yahoo Weather(https://poweredby.yahoo.com/white.png)](https://www.yahoo.com/?ilc=401))
++ Always Updated with real-time data. Powered by [![Yahoo Weather](https://poweredby.yahoo.com/purple.png)](https://www.yahoo.com/?ilc=401)
+
+
 
 + Simple Interface, No notifications bothering you.
 
